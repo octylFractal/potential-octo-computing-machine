@@ -2,10 +2,16 @@ package k.pocm;
 
 import java.io.PrintStream;
 
+import k.core.gui.JMIActionListener;
 import k.core.gui.SideConsole;
 import k.pocm.gui.MainWindow;
+import k.pocm.gui.actions.LWJGLListener;
 
 public class OctoCompStarter {
+
+	public static final JMIActionListener lwjgl_output = new LWJGLListener(
+			"LWJGL Output", "o", "output"), lwjgl_input = new LWJGLListener(
+			"LWJGL Input", "i", "input");
 
 	public static final String VERSION = "1.0 alpha dev";
 
@@ -17,7 +23,7 @@ public class OctoCompStarter {
 		PrintStream early2 = SideConsole.earlyChainE(System.err);
 		System.setOut(early1);
 		System.setErr(early2);
-		SideConsole c = new SideConsole(true);
+		new SideConsole(true);
 		MainWindow.open();
 	}
 

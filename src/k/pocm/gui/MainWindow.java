@@ -1,11 +1,14 @@
 package k.pocm.gui;
 
+import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
+import k.core.gui.JMIActionListener;
 import k.core.gui.Menu;
 import k.core.gui.SideConsole;
 import k.core.util.Helper;
@@ -18,10 +21,18 @@ public class MainWindow extends JFrame {
 
 	public MainWindow(String version) {
 		setTitle("POCM " + version);
+		addGUI();
 		setupMenu();
 		pack();
 		Helper.Window.drop(this);
 		setVisible(true);
+	}
+
+	private void addGUI() {
+		JPanel mainScreen = new JPanel();
+		mainScreen.setPreferredSize(new Dimension(600, 800));
+		mainScreen.setSize(getPreferredSize());
+		add(mainScreen);
 	}
 
 	private void setupMenu() {
@@ -31,7 +42,17 @@ public class MainWindow extends JFrame {
 		m.addMenuByName("output", "Output");
 
 		m.addMenuItemToMenuByName("input", "gpe", "Generic Point Entering");
+		m.addMenuItemToMenuByName("input", "lwjgl-i", "LWJGL Input");
 
+		m.addMenuItemToMenuByName("output", "gpd", "Generic Point Dump");
+		m.addMenuItemToMenuByName("output", "lwjgl-o", "LWJGL Output");
+
+		m.setActionListenerAll(JMIActionListener.instForMenu("pocm_main"));
+
+		m.display(this);
+		// Disabled
+		// m.addMenuItemToMenuByName("input", "opengl-obj_c",
+		// "OpenGL for Objective-C");
 	}
 
 	public static void open() {
