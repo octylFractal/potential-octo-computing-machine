@@ -30,7 +30,7 @@ public class MainWindow extends JFrame {
 
 	private void addGUI() {
 		JPanel mainScreen = new JPanel();
-		mainScreen.setPreferredSize(new Dimension(600, 800));
+		mainScreen.setPreferredSize(new Dimension(800, 600));
 		mainScreen.setSize(getPreferredSize());
 		add(mainScreen);
 	}
