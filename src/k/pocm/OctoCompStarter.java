@@ -5,13 +5,16 @@ import java.io.PrintStream;
 import k.core.gui.JMIActionListener;
 import k.core.gui.SideConsole;
 import k.pocm.gui.MainWindow;
+import k.pocm.gui.actions.GPListener;
 import k.pocm.gui.actions.LWJGLListener;
 
 public class OctoCompStarter {
 
 	public static final JMIActionListener lwjgl_output = new LWJGLListener(
 			"LWJGL Output", "o", "output"), lwjgl_input = new LWJGLListener(
-			"LWJGL Input", "i", "input");
+			"LWJGL Input", "i", "input"), gp_e = new GPListener(
+			"Generic Point Entering", "e", "input"), gp_d = new GPListener(
+			"Generic Point Dump", "d", "output");
 
 	public static final String VERSION = "1.0 alpha dev";
 
