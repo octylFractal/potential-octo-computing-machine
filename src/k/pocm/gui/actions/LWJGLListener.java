@@ -3,6 +3,9 @@ package k.pocm.gui.actions;
 import java.awt.event.ActionEvent;
 
 import k.core.gui.JMIActionListener;
+import k.core.translate.Translate.Language;
+import k.pocm.points.PointHandler;
+import k.pocm.translate.POCMLanguages;
 
 public class LWJGLListener extends JMIActionListener {
 
@@ -12,7 +15,9 @@ public class LWJGLListener extends JMIActionListener {
 
 	@Override
 	public void onAction(ActionEvent e) {
-		System.err.println("Activated on menu " + super.menu);
+		PointHandler.setForMenu(
+				(e.getActionCommand().equalsIgnoreCase("lwjgl output")),
+				POCMLanguages.LWJGL);
 	}
 
 }
