@@ -62,6 +62,7 @@ public class MainWindow extends JFrame {
 			@Override
 			public void windowClosing(WindowEvent e) {
 				kill(SideConsole.console);
+				System.exit(0);
 			}
 
 			private void kill(JFrame frame) {
