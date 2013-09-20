@@ -13,6 +13,7 @@ import k.core.gui.Menu;
 import k.core.gui.SideConsole;
 import k.core.util.Helper;
 import k.pocm.OctoCompStarter;
+import k.pocm.translate.POCMLanguages;
 
 public class MainWindow extends JFrame {
 
@@ -21,6 +22,7 @@ public class MainWindow extends JFrame {
 
 	public MainWindow(String version) {
 		setTitle("POCM " + version);
+		POCMLanguages.init();
 		addGUI();
 		setupMenu();
 		pack();
