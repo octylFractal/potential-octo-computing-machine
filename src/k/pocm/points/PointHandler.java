@@ -23,6 +23,8 @@ public class PointHandler {
 
 	private PointList<Point3D, PointGroup<Point3D>> readInput(
 			String[] inputLines) {
+		Class<? extends Point3D> pointClass = Point3D.matchingClassForID(in);
+		PointType type = Point3D.getTypeForClass(pointClass);
 		return null;
 	}
 
