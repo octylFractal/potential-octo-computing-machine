@@ -8,10 +8,10 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import k.core.gui.JMIActionListener;
-import k.core.gui.Menu;
-import k.core.gui.SideConsole;
 import k.core.util.Helper;
+import k.core.util.gui.JMIActionListener;
+import k.core.util.gui.Menu;
+import k.core.util.gui.SideConsole;
 import k.pocm.OctoCompStarter;
 import k.pocm.translate.POCMLanguages;
 

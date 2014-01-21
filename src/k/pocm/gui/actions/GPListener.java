@@ -2,7 +2,7 @@ package k.pocm.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import k.core.gui.JMIActionListener;
+import k.core.util.gui.JMIActionListener;
 
 public class GPListener extends JMIActionListener {
 

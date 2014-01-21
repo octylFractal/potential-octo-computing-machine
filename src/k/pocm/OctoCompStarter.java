@@ -2,8 +2,8 @@ package k.pocm;
 
 import java.io.PrintStream;
 
-import k.core.gui.JMIActionListener;
-import k.core.gui.SideConsole;
+import k.core.util.gui.JMIActionListener;
+import k.core.util.gui.SideConsole;
 import k.pocm.gui.MainWindow;
 import k.pocm.gui.actions.GPListener;
 import k.pocm.gui.actions.LWJGLListener;

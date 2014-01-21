@@ -2,8 +2,7 @@ package k.pocm.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import k.core.gui.JMIActionListener;
-import k.core.translate.Translate.Language;
+import k.core.util.gui.JMIActionListener;
 import k.pocm.points.PointHandler;
 import k.pocm.translate.POCMLanguages;
 

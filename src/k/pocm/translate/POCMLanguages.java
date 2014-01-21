@@ -2,7 +2,7 @@ package k.pocm.translate;
 
 import java.util.HashMap;
 
-import k.core.translate.Translate;
+import k.core.util.translate.Translate;
 
 public class POCMLanguages {
 
