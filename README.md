@@ -7,4 +7,7 @@ A 3D format converter.
 Yes, 2D works as well.
 
 
-Depends on my KCore library, avaliable in src form at https://github.com/TechShroom/KCore/.
+This requires these jars from [here](http://techshroom.com/other/libraries/kcore/distributed-segments/):
+*Core
+*Gui
+*Translate
