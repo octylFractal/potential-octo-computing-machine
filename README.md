@@ -8,6 +8,6 @@ Yes, 2D works as well.
 
 
 This requires these jars from [here](http://techshroom.com/other/libraries/kcore/distributed-segments/):
-*Core
-*Gui
-*Translate
+* Core
+* Gui
+* Translate
