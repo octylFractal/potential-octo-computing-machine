@@ -1,7 +1,6 @@
 package k.pocm.gui;
 
 import java.awt.Dimension;
-import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -63,16 +62,7 @@ public class MainWindow extends JFrame {
 
 			@Override
 			public void windowClosing(WindowEvent e) {
-				kill(SideConsole.console);
-				System.exit(0);
-			}
-
-			private void kill(JFrame frame) {
-				Toolkit.getDefaultToolkit()
-						.getSystemEventQueue()
-						.postEvent(
-								new WindowEvent(frame,
-										WindowEvent.WINDOW_CLOSING));
+				Helper.Window.kill(SideConsole.console);
 			}
 
 		});
