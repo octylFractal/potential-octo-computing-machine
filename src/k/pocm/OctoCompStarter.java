@@ -11,8 +11,8 @@ import k.pocm.gui.actions.LWJGLListener;
 public class OctoCompStarter {
 
 	public static final JMIActionListener lwjgl_output = new LWJGLListener(
-			"LWJGL Output", "o", "output"), lwjgl_input = new LWJGLListener(
-			"LWJGL Input", "i", "input"), gp_e = new GPListener(
+			"LWJGL Output", true, "output"), lwjgl_input = new LWJGLListener(
+			"LWJGL Input", false, "input"), gp_e = new GPListener(
 			"Generic Point Entering", "e", "input"), gp_d = new GPListener(
 			"Generic Point Dump", "d", "output");
 
