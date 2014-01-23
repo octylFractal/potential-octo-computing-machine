@@ -8,16 +8,16 @@ import k.pocm.translate.POCMLanguages;
 
 public class LWJGLListener extends JMIActionListener {
 
-	private boolean output = false;
+    private boolean output = false;
 
-	public LWJGLListener(String title, boolean out, String menu) {
-		super(title, "lwjgl-" + (out ? "o" : "i"), menu);
-		output = out;
-	}
+    public LWJGLListener(String title, boolean out, String menu) {
+        super(title, "lwjgl-" + (out ? "o" : "i"), menu);
+        output = out;
+    }
 
-	@Override
-	public void onAction(ActionEvent e) {
-		PointHandler.setForMenu(output, POCMLanguages.LWJGL);
-	}
+    @Override
+    public void onAction(ActionEvent e) {
+        PointHandler.setForMenu(output, POCMLanguages.LWJGL);
+    }
 
 }
